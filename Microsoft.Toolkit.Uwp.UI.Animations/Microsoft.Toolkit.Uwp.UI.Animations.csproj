@@ -28,7 +28,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Debug\Microsoft.Toolkit.Uwp.UI.Animations.xml</DocumentationFile>
-    <CodeAnalysisRuleSet>microsoft.toolkit.uwp.ui.animations.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\UWP Community Toolkit.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -40,11 +40,10 @@
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <DocumentationFile>bin\Release\Microsoft.Toolkit.Uwp.UI.Animations.xml</DocumentationFile>
-    <CodeAnalysisRuleSet>microsoft.toolkit.uwp.ui.animations.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\UWP Community Toolkit.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <None Include="Microsoft.Toolkit.Uwp.UI.Animations.ruleset" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -97,7 +96,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>microsoft.toolkit.uwp.ui.animations.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\UWP Community Toolkit.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28Anniversary Update%29|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
@@ -109,7 +108,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>microsoft.toolkit.uwp.ui.animations.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\UWP Community Toolkit.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release %28Version 1511%29|AnyCPU'">
     <OutputPath>bin\Release %28Version 1511%29\</OutputPath>
@@ -122,7 +121,7 @@
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>microsoft.toolkit.uwp.ui.animations.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\UWP Community Toolkit.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release %28Anniversary Update%29|AnyCPU'">
     <OutputPath>bin\Release %28Anniversary Update%29\</OutputPath>
@@ -135,7 +134,7 @@
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>microsoft.toolkit.uwp.ui.animations.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\UWP Community Toolkit.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
