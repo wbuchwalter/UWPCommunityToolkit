@@ -11,7 +11,7 @@
 		<DataTemplate x:Key="PhotosTemplate">
 			<Grid Background="White" BorderBrush="Black" BorderThickness="1">
 				<Image Source="{Binding Thumbnail}"
-                    Stretch="UniformToFill"
+                    Stretch="Uniform"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"/>
 			</Grid>
@@ -20,11 +20,12 @@
 
 
     <Grid Background="{StaticResource Brush-Grey-05}">
-        <GridView ItemTemplate="{StaticResource PhotosTemplate}"
-                  x:Name="ListControl">
+        <GridView ItemTemplate="{StaticResource PhotosTemplate}" x:Name="ListControl" 
+                  VerticalAlignment="Top">
             <GridView.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <controls:StaggeredGridPanel />
+                    <controls:StaggeredGridPanel Orientation="{Binding Orientation.Value}"
+                          DesiredItemSize="{Binding DesiredItemSize.Value}" />
                 </ItemsPanelTemplate>
             </GridView.ItemsPanel>
         </GridView>

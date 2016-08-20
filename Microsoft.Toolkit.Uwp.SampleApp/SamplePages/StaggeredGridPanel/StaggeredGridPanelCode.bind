@@ -9,22 +9,23 @@
 
     <Page.Resources>
         <DataTemplate x:Key="PhotosTemplate">
-            <Grid
-                Background="White"
-                BorderBrush="Black"
-                BorderThickness="1">
-                <Image
-                    Source="{Binding Thumbnail}"
-                    Stretch="UniformToFill"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"/>
-            </Grid>
+          <Grid Background="White" BorderBrush="Black" BorderThickness="1">
+            <Image Source="{Binding Thumbnail}"
+                        Stretch="Uniform"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"/>
+          </Grid>
         </DataTemplate>
     </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <controls:AdaptiveGridView Name="control"
-                                     ItemHeight="@[ItemHeight:Slider:200:50-500]"
-                                     DesiredWidth="@[DesiredWidth:Slider:300:50-500]"
-                                     ItemTemplate="{StaticResource PhotosTemplate}"/>
+      <GridView ItemTemplate="{StaticResource PhotosTemplate}" x:Name="ListControl">
+        <GridView.ItemsPanel>
+          <ItemsPanelTemplate>
+            <controls:StaggeredGridPanel Name="control"
+                        Orientation="@[Orientation:Enum:Orientation.Vertical]"
+                        DesiredItemSize="@[DesiredItemSize:Slider:300:50-500]" />
+          </ItemsPanelTemplate>
+        </GridView.ItemsPanel>
+      </GridView>
     </Grid>
 </Page>
